@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/5b6fc97816.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="./img/Logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Inicio</a></li>
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#service">Servicios</a></li>
+                        <li><a href="#portfolio">Portafolio</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Programador/Game Developer</p>
+                    <h1>Hola, Soy <span>Gerardo</span> Ramírez</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------about--------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./img/user1.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Sobre mí</h1>
+                        <p>¡Hola! Soy Gerardo de San Luis Potosí, México, graduado en Ingeniería en programación de videojuegos. Soy un apasionado por la programación, el desarrollo web y los videojuegos. La disciplina, dedicación y compromiso son tres factores que me definen. Me gusta dar siempre lo mejor de mí en todo, por más simple o compleja que pueda ser la tarea.
+                        </p>
+                        <p>Disfruto creando cosas y tengo experiencia en una amplia gama de disciplinas de diseño, gestión y desarrollo.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('education')">Educación</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Unity, Unreal Engine</span><br>Desarrollo de videojuegos 2D/3D.</li>
+                                <li><span>Android/iOs</span><br>Desarrollo de aplicaciones móviles.</li>
+                                <li><span>Html, Css, Javascript</span><br>Desarrollo de páginas web.</li>
+                                <li><span>UI/UX</span><br>Diseño de interfaces para Web/Apps.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019 - 2023</span><br>UNIAT, Ingeniería en programación de videojuegos.</li>
+                                <li><span>2021 - 2022</span><br>Google IT Suport Professional Certififcate.</li>
+                                <li><span>2020 - 2021</span><br>Udemy, C# Curso Profesional.</li>
+                                <li><span>2020</span><br>Google Actívate, Desarrollo Web: HTML y CSS.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------Services--------->
+        <div id="service">
+            <div class="container">
+                <h1 class="sub-title">Mis servicios</h1>
+                <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Game Dev</h2>
+                        <p>Desarrollo y creación de videojuegos, desde el concepto inicial hasta el videojuego en su versión final. 
+                            Se realizan actividades que involucran programación, diseño gráfico, animación, sonido, música, actuación, etc.</p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Back-end</h2>
+                        <p>Construir y mantener sitios web. Mi principal responsabilidad es utilizar diversas herramientas,
+                             marcos y lenguajes para determinar la mejor manera de desarrollar prototipos intuitivos y fáciles de usar, y convertirlos en sitios web.</p>
+
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>UI/UX</h2>
+                        <p>Mi objetivo es que la interacción del usuario con el producto sea sencilla e intuitiva, consiguiendo así una buena relación con la marca. 
+                            Satisfaciendo las necesidades de los usuarios proporcionándoles la mejor experiencia interactiva y visual en un programa, una app o una web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------portfolio--------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Mis proyectos</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./img/frogger.png">
+                        <div class="layer">
+                            <h3>Frogger</h3>
+                            <p>Juego de plataformas 2D desarrollado en Unity</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./img/mineswepper.png">
+                        <div class="layer">
+                            <h3>Mineswepper</h3>
+                            <p>Recreación del clásico juego busca-minas desarrollado en Unity</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./img/Blog.png">
+                        <div class="layer">
+                            <h3>UNIAT, TechNews</h3>
+                            <p>Prototipo de un blog de tecnología desarrollado en Html/Css</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./img/fps.png">
+                        <div class="layer">
+                            <h3>RoboCrysis</h3>
+                            <p>Juego FPS 3D desarrollado en Unity</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./img/tds.png">
+                        <div class="layer">
+                            <h3>CubeShooter</h3>
+                            <p>Juego TopDownShooter 3D desarrollado en Unreal Engine</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./img/cars.png">
+                        <div class="layer">
+                            <h3>Drag Racing</h3>
+                            <p>Juego de carreras 3D desarrollado para Android</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://youtu.be/qTpHyz_9AVY" target="_blank" class="btn"><i class="fa-solid fa-video"></i> Ver Demo Reel</a>
+            </div>
+        </div>
+
+        <!-------contact--------->        
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contactame!</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> gerardors192@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +52 4448298307</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/gerardo-ramírez-salinas-6741a1270" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="./resources/GRS.pdf" download class="btn btn2">Descargar CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="Contact_form">
+                            <input type="text" name="Name" placeholder="Nombre" required>
+                            <input type="text" name="Email" placeholder="Email" required>
+                            <textarea name="Message" rows="10"></textarea>
+                            <button type="submit" class="btn btn2">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ 2023 Gerardo Rmz. Created with <i class="fa-solid fa-heart"></i> by GRS. All rights reserved.</p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu()
+            {
+                sidemenu.style.right = "0";
+            }
+            function closemenu()
+            {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+	        const scriptURL = 'https://script.google.com/macros/s/AKfycbyjgEqfxQvEmVISg07iyrujq2IEl6-HdLIcGduePhjYOpgsViHcH1942JoyOTNNNsn3/exec'
+	        const form = document.forms['Contact_form']
+
+	        form.addEventListener('submit', e => {
+		    e.preventDefault()
+		    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => console.log('Success!', response))
+			.catch(error => console.error('Error!', error.message))
+	        })
+        </script>
+    </body>
+</html>
